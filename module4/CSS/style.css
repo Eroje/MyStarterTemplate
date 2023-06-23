@@ -1,6 +1,9 @@
 h2 {
-    color: white;
+    color: yellow;
     background-color: red;
+    font-family: Aerial, "Comis Sans", Calibri;
+    font-size: 3em;
+    text-align: center;
 }
 
 h1 {
@@ -13,4 +16,15 @@ h1 {
 
 .accent {
     background-color: yellow;
+    color: blue;
+}
+
+body main div {
+    color: white;
+}
+
+footer {
+    background-color: rgb(23, 216, 126);
+
+    color: #6920dd;
 }

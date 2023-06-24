@@ -5,6 +5,7 @@
     nav ul li {
         display: inline-block; /*This list items horizontally and allows them to stretch*/
         border-radius: 1em;
+        min-width: 10%; 
         box-shadow: 0.5em 0.5em 0.5em black;
     }
 

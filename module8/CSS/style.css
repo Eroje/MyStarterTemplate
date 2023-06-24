@@ -9,11 +9,11 @@ body {
 header img {
     width: 100%; /*This stretches the image accross the viewport*/
     height: auto; /*The height will change based on the size of the viewport*/
-    max-width: 500px;
+    max-width: 800px;
 }
 
 nav {
-    border-radius: 1.0em; /*This rounds the corners of the element*/
+   
     margin-bottom: 1.0em;
     font-weight: bold;
     text-align: center;
@@ -28,9 +28,9 @@ nav ul {
 nav ul li {
     background-color: black; 
     list-style-type: none; /*This removes bullet points*/
-    padding: 1em;
-    min-width: 12%;
-    margin: 0.25rem
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    margin: 1em;
    
 }
 
@@ -94,7 +94,8 @@ footer {
 @media screen and (min-width: 961px) {
 
     header {
-        background-image: linear-gradient(to right, white, black);
+        background-image: linear-gradient(to right, white, black, #F45050, #F45050);
+        box-shadow: 0.5em 0.5em 0.5em black;
     }
 
     header img {
@@ -105,14 +106,15 @@ footer {
         display: block; /*This displays all 3-columns in the desktop viewport*/
     } 
     nav {
-        padding-top: 0.4em;
-        padding-bottom: 0.4em;
-        background-color: red;
+        padding-top: 0.2em;
+        padding-bottom: 0.2em;
+        background-color: #F45050; 
         float: right; /*This floats the nav elements to the right side of the page*/
         margin-top: -5.2em; /*This moves the nav elements Up */
         width: 60%;
         border-top: solid 0.2em black;
         border-bottom: solid 0.2em black;
+        max-width: 50%;
     }
     nav ul li {
         border-radius: 1em;

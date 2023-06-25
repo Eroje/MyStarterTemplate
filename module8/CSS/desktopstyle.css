@@ -1,0 +1,37 @@
+
+
+@media screen and (min-width: 961px) {
+
+    header {
+        background-image: linear-gradient(to right, white, black, #F45050, #F45050);
+        box-shadow: 0.5em 0.5em 0.5em black;
+    }
+
+    header img {
+        width: auto;
+        height: 5em;
+    }
+    .desktop {
+        display: block; /*This displays all 3-columns in the desktop viewport*/
+    } 
+    nav {
+        padding-top: 0.2em;
+        padding-bottom: 0.2em;
+        background-color: #F45050; 
+        float: right; /*This floats the nav elements to the right side of the page*/
+        margin-top: -5.2em; /*This moves the nav elements Up */
+        width: 60%;
+        border-top: solid 0.2em black;
+        border-bottom: solid 0.2em black;
+        max-width: 50%;
+    }
+    nav ul li {
+        border-radius: 1em;
+    } 
+    main div .center {
+        padding: 1%;
+        width: 52%;
+        border-right: 0.3em solid black;
+        border-left: 0.3em solid black;
+    }   
+}

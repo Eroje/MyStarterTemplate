@@ -1,0 +1,153 @@
+
+@import url("mobilestyle.css");
+@import url("tabletstyle.css");
+
+
+body {
+    background-image: linear-gradient(white,grey);
+}
+
+header img {
+    width: 100%; /*This stretches the image accross the viewport*/
+    height: auto; /*The height will change based on the size of the viewport*/
+    max-width: 800px;
+}
+
+nav {
+   
+    margin-bottom: 1.0em;
+    font-weight: bold;
+    text-align: center;
+}
+
+nav ul {
+    padding: 0;
+    margin-top: 0.2em;
+    margin-bottom: 0.2em;
+}
+
+nav ul li {
+    background-color: black; 
+    list-style-type: none; /*This removes bullet points*/
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    margin: 1em;
+   
+}
+
+nav ul li a {
+
+    color: white;
+    text-decoration: none; /*Removes the underline from the hyperlinks*/
+}
+
+figure {
+    text-align: center;
+    background-color: white;
+}
+
+figure img {
+    max-width: 800px;
+    /*max-height: 600px;*/
+    width: 100%;
+    height: auto;
+}
+
+main {
+    padding: 1em;
+    background-image: linear-gradient(white, white, white, grey);
+    min-height: 400px;
+    border-radius: 1.0em; /*This places the space between the elements*/
+    
+}
+/*3-Column Layout Begins*/
+main .row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+main div .column {
+    float: left;
+}
+
+main div .left {
+    padding: 0.5%;
+    width: 20%;
+    float: left;  
+}
+
+main div .right {
+    float: right; 
+    padding: 0.5%;
+    width: 23%;     
+}
+/*3-Column Layout Ends*/
+
+/*.Sechedule Table Begins*/
+.schedule table {
+    border: 0.1em solid black;
+    border-collapse: collapse;
+    width: 95%;
+    margin-left: 2.5%;
+    background-color: white;
+}
+.schedule caption {
+    border: 0.1em solid black;
+    font-size: 1.5em;
+    font-weight: bold; 
+}
+.schedule th, td {
+    border: 0.1em solid black;
+    padding: 0.5em;
+    text-align: center;
+}
+.schedule th {
+    background-color: black;
+    color: white; /*This is the text color*/
+}
+
+/*.Sechedule Table Begins*/
+footer {
+    background-image: linear-gradient(to right, white,grey);
+    border-radius: 1.0em;
+    text-align: center;
+}
+
+/*Begin desktop*/
+@media screen and (min-width: 961px) {
+
+    header {
+        background-image: linear-gradient(to right, white, black, #F45050, #F45050);
+        box-shadow: 0.5em 0.5em 0.5em black;
+    }
+
+    header img {
+        width: auto;
+        height: 5em;
+    }
+    .desktop {
+        display: block; /*This displays all 3-columns in the desktop viewport*/
+    } 
+    nav {
+        padding-top: 0.2em;
+        padding-bottom: 0.2em;
+        background-color: #F45050; 
+        float: right; /*This floats the nav elements to the right side of the page*/
+        margin-top: -5.2em; /*This moves the nav elements Up */
+        width: 60%;
+        border-top: solid 0.2em black;
+        border-bottom: solid 0.2em black;
+        max-width: 50%;
+    }
+    nav ul li {
+        border-radius: 1em;
+    } 
+    main div .center {
+        padding: 1%;
+        width: 52%;
+        border-right: 0.3em solid black;
+        border-left: 0.3em solid black;
+    }   
+}
+/*End desktop*/
